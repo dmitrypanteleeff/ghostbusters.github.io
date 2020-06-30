@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>   
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghostbusters</title>
+    <link rel="stylesheet" href="swiper/package/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-1">
+        <nav class="header">
+             <div class="header__logo">
+                <img class="header__logo-img"src="img/logo-film.png" alt="Лого">
+             </div>
+             <div class="header__search">
+                <div class="header__input">
+                    <img src="img/img-search-icon.svg" alt="" class="header__search-icon">
+                    <div class="header__input-search" contenteditable="true">
+                        Поиск по фильмам...
+                    </div>
+                </div>
+                <div class="header__links">
+                  <a class="header__link" href="">Фильмы</a>
+                  <a class="header__link" href="">ТВ</a>
+                  <a class="header__link" href="">Новости</a>
+                  <a class="header__link" href="">О&nbsp;сервисе</a>
+                </div>
+             </div>
+             <button class="header__m-menu">
+                 <span class="header__m-menu-line header__m-menu-line--1"></span>
+                <!-- <div class="header__m-menu-line header__m-menu-line--2"></div>
+                 <div class="header__m-menu-line header__m-menu-line--3"></div>-->
+             </button>
+             <button class="header__registration">
+                <span class="header__registration-span">
+                    Регистрация
+                </span>
+             </button>
+             <button class="header__log-in">
+                <span class="header__log-in-span">
+                    Войти
+                </span>
+             </button>
+        </nav>
+        </div>
+        <nav class="header__tablet-menu">
+            <div class="tablet-menu__links">
+                <a class="tablet-menu__link" href="">
+                    Фильмы
+                </a>
+                <a class="tablet-menu__link" href="">
+                    ТВ
+                </a>
+                <a class="tablet-menu__link" href="">
+                    Новости
+                </a>
+                <a class="tablet-menu__link" href="">
+                    О&nbsp;сервисе
+                </a>
+            </div>
+            <div class="tablet-menu__line">
+
+            </div>
+            <div class="tablet-menu__wrapper-btn">
+                <button class="tablet-menu__registration tablet-menu__btn">
+                   <span class="tablet-menu__registration-span">
+                    Регистрация
+                   </span>
+                </button>
+                <button class="tablet-menu__log-in tablet-menu__btn">
+                   <span class="tablet-menu__log-in-span">
+                    Войти
+                   </span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main__top-wrapper">
+            <div class="top-wrapper__contaner">
+                <div class="top-wrapper__afisha">
+                    <img class="top-wrapper__afisha-img" src="img/img-afisha.png" alt="">
+                    <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=84a2VD68hJU" class="top-wrapper__afisha-btn">
+                        <img class="top-wrapper__afisha-btn-img" src="img/icon-play.svg">
+                        <span class="top-wrapper__afisha-btn-span">
+                            Посмотреть трейлер
+                        </span>
+                    </a>
+                </div>
+                <div class="top-wrapper__info">
+                    <h1 class="top-wrapper__title-film">
+                        Охотники за приведениями: Наследники
+                    </h1>
+                    <span class="top-wrapper__title-film-eng">
+                        Ghostbusters: Afterlife
+                    </span>
+                    <span class="top-wrapper__sinopsis">
+                        Мать-одиночка с двумя детьми-подростками селится на старой ферме в Оклахоме, полученной в наследство от отца, которого она не знала. Дети пытаются больше узнать о своем деде и находят автомобиль Ecto-1, принадлежавший знаменитым охотникам за привидениями.
+                    </span>
+                    <div class="top-wrapper__persons-wrapper">
+                        <div class="top-wrapper__person-film">
+                          <div class="top-wrapper__container">
+                              <span class="top-wrapper__profession">Режиссёр</span>
+                              <span class="top-wrapper__name">Джейсон Райт</span>
+                          </div>
+                          <div class="top-wrapper__container">
+                              <span class="top-wrapper__profession">Сценарий</span>
+                              <span class="top-wrapper__name">Дэн Эйкройд</span>
+                          </div>
+                          <div class="top-wrapper__container">
+                              <span class="top-wrapper__profession">Премьера</span>
+                              <span class="top-wrapper__name">09.07.2020&nbsp;(РФ)</span>
+                          </div>
+                        </div>
+                        <div class="top-wrapper__person-info">
+                          <div class="top-wrapper__container">
+                              <span class="top-wrapper__profession">Бюджет</span>
+                              <span class="top-wrapper__name">1 000 000 $</span>
+                          </div>
+                          <div class="top-wrapper__container">
+                              <span class="top-wrapper__profession">Кинопрокат</span>
+                              <span class="top-wrapper__name">SPPR</span>
+                          </div>
+                          <div class="top-wrapper__container">
+                              <span class="top-wrapper__profession">Премьера</span>
+                              <span class="top-wrapper__name">09.07.2020&nbsp;(РФ)</span>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- конец top-wrapper__persons-wrapper -->
+                    <div class="top-wrapper__rating">
+                        <div class="top-wrapper__persent-block">
+                            <span class="top-wrapper__persent-span">
+                                92%
+                            </span>
+                        </div>
+                        <div class="top-wrapper__rating-info">
+                            <span class="top-wrapper__rating-title">
+                                Рейтинг зрителей
+                            </span>
+                            <div class="top-wrapper__rating-score">
+                                <span class="top-wrapper__rating-info">
+                                    Средняя оценка:
+                                </span>
+                                <span class="top-wrapper__rating-info-score">
+                                    4,5/5
+                                </span>
+                            </div>
+                            <div class="top-wrapper__rating-score">
+                                <span class="top-wrapper__rating-info">
+                                    Всего голосов:
+                                </span>
+                                <span class="top-wrapper__rating-info-score">
+                                    4&nbsp;350
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- конец top-wrapper__rating -->
+                </div>
+            </div>
+            <!-- конец top-wrapper__contaner -->
+
+        </div>
+        <!-- конец main__top-wrapper-->
+        <div class="main__mid-wrapper">
+            <div class="mid-wrapper__container">
+                <div class="mid-wrapper__profesionals">
+                  <span class="mid-wrapper__actors mid-wrapper__actors--active">
+                      Актёры
+                  </span>
+                  <span class="mid-wrapper__actors">
+                      Создатели
+                  </span>
+                </div> 
+                <div class="mid-wrapper__gallery">
+                    <div class="gallery__container">
+                        <div class="gallery__avatar">
+                            <img class="gallery__avatar-img" alt="Аватар" src="img/img-actress-01.jpg">
+                        </div>
+                        <div class="gallery__person">
+                            <span class="gallery__person-name">
+                                Кэрри Кун
+                            </span>
+                            <span class="gallery__person-name-eng">
+                                Carrie Coon
+                            </span>
+                        </div>                        
+                    </div>
+                    <!--Конец gallery__container-->
+                    <div class="gallery__container">
+                        <div class="gallery__avatar">
+                            <img class="gallery__avatar-img" alt="Аватар" src="img/img-actress-01.jpg">
+                        </div>
+                        <div class="gallery__person">
+                            <span class="gallery__person-name">
+                                Билл Мюррей
+                            </span>
+                            <span class="gallery__person-name-eng">
+                                Bill Murray
+                            </span>
+                        </div>                        
+                    </div>
+                    <!--Конец gallery__container-->
+                    <div class="gallery__container">
+                        <div class="gallery__avatar">
+                            <img class="gallery__avatar-img" alt="Аватар" src="img/img-actress-01.jpg">
+                        </div>
+                        <div class="gallery__person">
+                            <span class="gallery__person-name">
+                                Пол Радд
+                            </span>
+                            <span class="gallery__person-name-eng">
+                                Paul Rudd
+                            </span>
+                        </div>                        
+                    </div>
+                    <!--Конец gallery__container-->
+                    <div class="gallery__container">
+                        <div class="gallery__avatar">
+                            <img class="gallery__avatar-img" alt="Аватар" src="img/img-actress-01.jpg">
+                        </div>
+                        <div class="gallery__person">
+                            <span class="gallery__person-name">
+                                Энни Поттс
+                            </span>
+                            <span class="gallery__person-name-eng">
+                                Annie Potts
+                            </span>
+                        </div>                        
+                    </div>
+                    <!--Конец gallery__container-->
+                    <div class="gallery__container">
+                        <div class="gallery__avatar">
+                            <img class="gallery__avatar-img" alt="Аватар" src="img/img-actress-01.jpg">
+                        </div>
+                        <div class="gallery__person">
+                            <span class="gallery__person-name">
+                                МакКенна Грейс
+                            </span>
+                            <span class="gallery__person-name-eng">
+                                Mckenna Grace
+                            </span>
+                        </div>                        
+                    </div>
+                    <!--Конец gallery__container-->
+                    <div class="gallery__container">
+                        <div class="gallery__avatar">
+                            <img class="gallery__avatar-img" alt="Аватар" src="img/img-actress-01.jpg">
+                        </div>
+                        <div class="gallery__person">
+                            <span class="gallery__person-name">
+                                Дэн Эйкройд
+                            </span>
+                            <span class="gallery__person-name-eng">
+                                Dan Aykroyd
+                            </span>
+                        </div>                        
+                    </div>
+                    <!--Конец gallery__container-->
+                    <div class="gallery__container">
+                        <div class="gallery__avatar">
+                            <img class="gallery__avatar-img" alt="Аватар" src="img/img-actress-01.jpg">
+                        </div>
+                        <div class="gallery__person">
+                            <span class="gallery__person-name">
+                                Эрни Хадсон
+                            </span>
+                            <span class="gallery__person-name-eng">
+                                Ernie Hudson
+                            </span>
+                        </div>                        
+                    </div>
+                    <!--Конец gallery__container-->
+                    <div class="gallery__container">
+                        <div class="gallery__avatar">
+                            <img class="gallery__avatar-img" alt="Аватар" src="img/img-actress-01.jpg">
+                        </div>
+                        <div class="gallery__person">
+                            <span class="gallery__person-name">
+                                Финн Вулфард
+                            </span>
+                            <span class="gallery__person-name-eng">
+                                Finn Wolfhard
+                            </span>
+                        </div>                        
+                    </div>
+                    <!--Конец gallery__container-->
+                </div> 
+            </div>
+        </div>
+        <!-- конец main__mid-wrapper-->
+        <div class="main__bottom-wrapper">
+            <div class="bottom-wrapper__container ">
+                <h2 class="bottom-wrapper__title">Новости по теме</h2>
+                <div class="bottom-wrapper__news-container swiper-container">
+                    <div class="swiper-wrapper">
+
+                    <div class="bottom-wrapper__news swiper-slide">
+                        <span class="bottom-wrapper__news-date">
+                            31 марта 2020
+                        </span>
+                        <span class="bottom-wrapper__news-content">
+                            «Морбиуса» и «Охотников за привидениями» перенесли на следующий год
+                        </span>
+                    </div>
+                    <!--конец bottom-wrapper__news-container-->
+                    <div class="bottom-wrapper__news swiper-slide">
+                        <span class="bottom-wrapper__news-date">
+                            9 декабря 2019
+                        </span>
+                        <span class="bottom-wrapper__news-content">
+                            Наследники: Вышел дебютный трейлер новых «Охотников за привидениями»
+                        </span>
+                    </div>
+                    <!--конец bottom-wrapper__news-container-->
+                    <div class="bottom-wrapper__news swiper-slide">
+                        <span class="bottom-wrapper__news-date">
+                            11 ноября 2019
+                        </span>
+                        <span class="bottom-wrapper__news-content">
+                            Новые «Охотники за привидениями» обзавелись названием
+                        </span>
+                    </div>
+                    <!--конец bottom-wrapper__news-container-->
+                    <div class="bottom-wrapper__news swiper-slide">
+                        <span class="bottom-wrapper__news-date">
+                            19 октября 2019
+                        </span>
+                        <span class="bottom-wrapper__news-content">
+                            Завершились съёмки новых «Охотников за привидениями»
+                        </span>
+                    </div>
+
+                    </div>
+                    <!--конец bottom-wrapper__news-container-->
+                    <!-- If we need pagination <div class="swiper-pagination"></div> -->
+                     
+
+                     <!-- If we need navigation buttons -->
+                     <div class="swiper-button-prev"></div>
+                     <div class="swiper-button-next"></div>
+
+                     <!-- If we need scrollbar <div class="swiper-scrollbar"></div> -->
+                     
+                </div>
+                <div class="bottom-wrapper__arrows-wrapper">
+                    <button class="bottom-wrapper__arrows">
+                        <img src="img/icon-arrow-left.svg" alt="" class="bottom-wrapper__arrow-left">
+                    </button>
+                    <button class="bottom-wrapper__arrows">
+                        <img src="img/icon-arrow-right.svg" alt="" class="bottom-wrapper__arrow-right">
+                    </button>
+                </div>
+                <!-- конец bottom-wrapper__news-container-->
+            </div>
+            <!-- конец bottom-wrapper__container-->
+        </div>
+        <!-- конец main__bottom-wrapper-->
+    </main>
+    <script src="js/main.js"></script> 
+    <script src="swiper/package/js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+          // Optional parameters
+          direction: 'horizontal',
+          loop: true,
+          autoplay: {
+             delay: 5000,
+           },
+          breakpoints: {
+             // when window width is >= 320px
+             320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+             },
+             // when window width is >= 480px
+             650: {
+                slidesPerView: 2,
+                spaceBetween: 30
+             },
+              // when window width is >= 640px
+             1024: {
+                slidesPerView: 3,
+                spaceBetween: 30
+             },
+             1200:{
+                slidesPerView: 4,
+                spaceBetween: 30
+             }
+          },
+      
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+          },
+      
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+      
+          // And if we need scrollbar
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+        })
+        </script>
+</body>
+</html>
